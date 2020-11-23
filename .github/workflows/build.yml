@@ -3,9 +3,6 @@ on:
   push:
     branches:
       - main
-defaults:
-  run:
-    working-directory: reactjs
 jobs:
   build:
     name: Build
@@ -37,7 +34,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: build
-          path: reactjs/build
+          path: build
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
