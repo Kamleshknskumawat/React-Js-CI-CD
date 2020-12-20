@@ -1,10 +1,14 @@
 import React, { Component, useContext } from 'react'
 import { ThemeContext } from '../MyThemeContext';
 function ProgrammingList() {
-    var programming = useContext(ThemeContext);
+
     // console.log(programming);
-    const { isLightTheme, light, dark } = useContext(ThemeContext);
+    const { isLightTheme, light, dark, toggle } = useContext(ThemeContext);
+
+    console.log("--------- Start ---------------------");
     console.log(isLightTheme);
+    console.log(light);
+    console.log(dark);
     const theme = isLightTheme ? light : dark;
     console.log(theme);
     return (
@@ -21,6 +25,9 @@ function ProgrammingList() {
                 <li style={{ background: theme.ui }}>React</li>
                 <li style={{ background: theme.ui }}>React Native</li>
             </ul>
+            <hr />
+            {/* <button onClick={toggle}>Toogle</button> */}
+
         </div>
     )
 

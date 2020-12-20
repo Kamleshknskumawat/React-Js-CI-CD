@@ -3,6 +3,7 @@ import './App.css';
 import MyThemeContext from './MyThemeContext';
 import NavBar from './Screens/NavBar';
 import ProgrammingList from './Screens/ProgrammingList';
+import ToggleButton from './Screens/ToggleButton';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <MyThemeContext>
           <NavBar />
           <ProgrammingList />
+          <ToggleButton />
         </MyThemeContext>
       </header>
     </div>
