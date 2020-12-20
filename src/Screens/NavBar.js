@@ -1,10 +1,6 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import { ThemeContext } from '../MyThemeContext';
 function NavBar() {
-    // const programming = useContext(ThemeContext);
-
-
-
     return (
         <ThemeContext.Consumer>{(ThemeContext) => {
             const { isLightTheme, light, dark } = ThemeContext;
