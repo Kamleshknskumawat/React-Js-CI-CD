@@ -18,7 +18,7 @@ const MyThemeContext = (props) => {
         console.log(programming);
     }
     return (
-        <ThemeContext.Provider value={{ ...programming, toggle, count }}>
+        <ThemeContext.Provider value={{ ...programming, toggle }}>
             {props.children}
         </ThemeContext.Provider>
     )
