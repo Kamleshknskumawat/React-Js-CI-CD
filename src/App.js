@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import React, { Component } from 'react'
 import './App.css';
+import MyThemeContext from './MyThemeContext';
+import NavBar from './Screens/NavBar';
+import ProgrammingList from './Screens/ProgrammingList';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <h1>React-Js-CI-CD</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <MyThemeContext>
+          <NavBar />
+          <ProgrammingList />
+        </MyThemeContext>
       </header>
     </div>
   );
