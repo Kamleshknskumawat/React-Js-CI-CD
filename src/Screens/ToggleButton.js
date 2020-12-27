@@ -7,6 +7,7 @@ function ToggleButton() {
         <div>
             <h1>{count}</h1>
             <button onClick={toggle}>Toggle</button>
+          
         </div>
     );
 
